@@ -1,7 +1,5 @@
 let friendsData = require("../data/friends");
 
-let test = [1,2,3,4,5,5,4,3,2,1]
-
 module.exports = function (app) {
     app.get("/api/friends", function (req, res) {
         res.json(friendsData);
